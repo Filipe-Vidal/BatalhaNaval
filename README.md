@@ -11,4 +11,4 @@ Um joguinho simples de batalha naval no terminal
   - 2a: detrmina se ao acertar um navio o jogador pode jogar novamente logo em seguida
 - Para jogar é bem simples, basta escolher a posição em que deseja jogar uma bomba, preferencialmente seguindo uma formatação de input parecida com esta: 2f
 
-          DIVIRTA-SE!
+    DIVIRTA-SE!
