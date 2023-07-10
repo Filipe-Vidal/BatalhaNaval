@@ -38,7 +38,6 @@ string cor(char fundoTexto[50], string texto)
 void pausaLimpa(bool pausa=true, char texto[100] = "Pressione enter para continuar.")
 {
     if(pausa){
-        //cout << "Pressione enter para continuar.";
         cout << texto;
         cin.get();
     }
@@ -346,8 +345,7 @@ void jogo(char preencher, char jogarNovamente)
     preencheTab(tela);
     dificuldade(n1, n2, n3, n4, tam, uniNav);
     geraTab(tab, tam, n1, n2, n3, n4);
-    cout << "\n\nCOMEÇAR\n";
-    //cont = uniNav-2;
+
     while(cont<uniNav)
     {
         pausaLimpa(false);
@@ -416,6 +414,7 @@ void jogo(char preencher, char jogarNovamente)
         }
         njog++;
     }
+
     pausaLimpa();
     titulo();
     cout << "FIM DE JOGO!\n" << "Todas os navios foram naufragados.\n\n";
@@ -451,7 +450,7 @@ int main()
 
         char preencher, jogarNovamente;
         cout << "\n               --------------\n               MENU DE OPÇÔES\n               --------------\n";
-        preencher = verificaSN("Ativar preenchimento automático de posições inválidas? [S/N] >> ");
+        preencher = verificaSN("Ativar preenchimento automático do entorno de um navio destruído? [S/N] >> ");
         jogarNovamente = verificaSN("Ativar jogada dupla para quem acertou? [S/N] >> ");
 
         pausaLimpa();
